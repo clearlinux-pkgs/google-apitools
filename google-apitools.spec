@@ -6,7 +6,7 @@ Name     : google-apitools
 Version  : 0.5.11
 Release  : 2
 URL      : https://pypi.python.org/packages/d9/a9/4914ccb93f8e236b7f773572cd3ade47d88c9b3e923ffbe3e794684a906f/google-apitools-0.5.12.tar.gz
-Source0  : http://pypi.debian.net/google-apitools/google-apitools-0.5.11.tar.gz
+Source0  : https://pypi.python.org/packages/d9/a9/4914ccb93f8e236b7f773572cd3ade47d88c9b3e923ffbe3e794684a906f/google-apitools-0.5.12.tar.gz
 Summary  : client libraries for humans
 Group    : Development/Tools
 License  : Apache-2.0
