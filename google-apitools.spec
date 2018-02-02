@@ -4,7 +4,7 @@
 #
 Name     : google-apitools
 Version  : 0.5.17
-Release  : 14
+Release  : 15
 URL      : https://pypi.debian.net/google-apitools/google-apitools-0.5.17.tar.gz
 Source0  : https://pypi.debian.net/google-apitools/google-apitools-0.5.17.tar.gz
 Summary  : client libraries for humans
