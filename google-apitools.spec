@@ -4,17 +4,22 @@
 #
 Name     : google-apitools
 Version  : 0.5.21
-Release  : 17
+Release  : 18
 URL      : https://pypi.debian.net/google-apitools/google-apitools-0.5.21.tar.gz
 Source0  : https://pypi.debian.net/google-apitools/google-apitools-0.5.21.tar.gz
 Summary  : client libraries for humans
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: google-apitools-bin
-Requires: google-apitools-legacypython
 Requires: google-apitools-python3
 Requires: google-apitools-python
 Requires: fasteners
+Requires: httplib2
+Requires: oauth2client
+Requires: python-gflags
+Requires: python-mock
+Requires: six
+Requires: unittest2
 BuildRequires : fasteners
 BuildRequires : pbr
 BuildRequires : pip
@@ -36,15 +41,6 @@ Group: Binaries
 
 %description bin
 bin components for the google-apitools package.
-
-
-%package legacypython
-Summary: legacypython components for the google-apitools package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the google-apitools package.
 
 
 %package python
@@ -73,15 +69,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1517761727
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523289441
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1517761727
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -92,10 +85,6 @@ echo ----[ mark ]----
 %files bin
 %defattr(-,root,root,-)
 /usr/bin/gen_client
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
