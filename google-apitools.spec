@@ -4,7 +4,7 @@
 #
 Name     : google-apitools
 Version  : 0.5.23
-Release  : 21
+Release  : 22
 URL      : https://pypi.debian.net/google-apitools/google-apitools-0.5.23.tar.gz
 Source0  : https://pypi.debian.net/google-apitools/google-apitools-0.5.23.tar.gz
 Summary  : client libraries for humans
@@ -17,9 +17,7 @@ Requires: fasteners
 Requires: httplib2
 Requires: oauth2client
 Requires: python-gflags
-Requires: python-mock
 Requires: six
-Requires: unittest2
 BuildRequires : fasteners
 BuildRequires : pbr
 BuildRequires : pip
@@ -69,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1525185857
+export SOURCE_DATE_EPOCH=1528564358
 python3 setup.py build -b py3
 
 %install
