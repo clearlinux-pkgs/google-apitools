@@ -4,7 +4,7 @@
 #
 Name     : google-apitools
 Version  : 0.5.23
-Release  : 22
+Release  : 23
 URL      : https://pypi.debian.net/google-apitools/google-apitools-0.5.23.tar.gz
 Source0  : https://pypi.debian.net/google-apitools/google-apitools-0.5.23.tar.gz
 Summary  : client libraries for humans
