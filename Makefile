@@ -1,5 +1,5 @@
 PKG_NAME := google-apitools
-URL = https://files.pythonhosted.org/packages/19/f3/b65d18fdbf772b49e4bc5c7098399e15b4c3dcfa12f1a699a35b030ac743/google-apitools-0.5.25.tar.gz
+URL = https://files.pythonhosted.org/packages/72/10/714bf2bb1bc0ce0b0c3fc1cd9ab396f4b3bd992d024a1b1f269471008ad2/google-apitools-0.5.26.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
