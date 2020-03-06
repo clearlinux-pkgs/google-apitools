@@ -4,7 +4,7 @@
 #
 Name     : google-apitools
 Version  : 0.5.30
-Release  : 43
+Release  : 44
 URL      : https://files.pythonhosted.org/packages/2f/b9/76bd1fdac6bdf60eec829f8e2aa61ed029f82bdec312eedae5b4139ec56b/google-apitools-0.5.30.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2f/b9/76bd1fdac6bdf60eec829f8e2aa61ed029f82bdec312eedae5b4139ec56b/google-apitools-0.5.30.tar.gz
 Summary  : client libraries for humans
@@ -26,53 +26,12 @@ BuildRequires : python-gflags
 BuildRequires : six
 
 %description
-google-apitools
 ===============
-
-|pypi| |build| |coverage|
-
-``google-apitools`` is a collection of utilities to make it easier to build
-client-side tools, especially those that talk to Google APIs.
-
-**NOTE**: This library is stable, but in maintenance mode, and not under
-active development. However, any bugs or security issues will be fixed
-promptly.
-
-Installing as a library
------------------------
-
-To install the library into the current virtual environment::
-
-   $ pip install google-apitools
-
-Installing the command-line tools
----------------------------------
-
-To install the command-line scripts into the current virtual environment::
-
-   $ pip install google-apitools[cli]
-
-Running the tests
------------------
-
-First, install the testing dependencies::
-
-   $ pip install google-apitools[testing]
-
-and the ``nose`` testrunner::
-
-   $ pip install nose
-
-Then run the tests::
-
-   $ nosetests
-
-.. |build| image:: https://travis-ci.org/google/apitools.svg?branch=master
-   :target: https://travis-ci.org/google/apitools
-.. |pypi| image:: https://img.shields.io/pypi/v/google-apitools.svg
-   :target: https://pypi.python.org/pypi/google-apitools
-.. |coverage| image:: https://coveralls.io/repos/google/apitools/badge.svg?branch=master
-   :target: https://coveralls.io/r/google/apitools?branch=master
+        
+        |pypi| |build| |coverage|
+        
+        ``google-apitools`` is a collection of utilities to make it easier to build
+        client-side tools, especially those that talk to Google APIs.
 
 %package bin
 Summary: bin components for the google-apitools package.
@@ -95,7 +54,11 @@ python components for the google-apitools package.
 Summary: python3 components for the google-apitools package.
 Group: Default
 Requires: python3-core
-Provides: pypi(google-apitools)
+Provides: pypi(google_apitools)
+Requires: pypi(fasteners)
+Requires: pypi(httplib2)
+Requires: pypi(oauth2client)
+Requires: pypi(six)
 
 %description python3
 python3 components for the google-apitools package.
@@ -110,8 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582931472
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583535348
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
