@@ -4,7 +4,7 @@
 #
 Name     : google-apitools
 Version  : 0.5.31
-Release  : 47
+Release  : 48
 URL      : https://files.pythonhosted.org/packages/19/da/aefc4cf4c168b5d875344cd9dddc77e3a2d11986b630251af5ce47dd2843/google-apitools-0.5.31.tar.gz
 Source0  : https://files.pythonhosted.org/packages/19/da/aefc4cf4c168b5d875344cd9dddc77e3a2d11986b630251af5ce47dd2843/google-apitools-0.5.31.tar.gz
 Summary  : client libraries for humans
